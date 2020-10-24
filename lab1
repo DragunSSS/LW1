@@ -1,0 +1,108 @@
+#include "iostream"
+#include "cmath"
+#include  "string"
+using namespace std;
+int main()
+{
+    
+    string s;
+    int q, w, e, v, m, p, b, g, n, r;
+    double a,x,y,z;
+    
+    std::cout << "1" << " " << "13" << " " << "49" << endl;
+    cout << "vvedite simvol:";
+        cin >> s;
+    std::cout << "1" << s << "13" << s << "49" << endl;
+    cout << "vvedite 3 chisla:";
+    cin >> q;
+    cin >> w;
+    cin >> e;
+    std::cout << q << " " << w << " " << e << endl;
+    cout << "vvedite luboe chislo:";
+    cin >> a;
+    x = 12 * a * a + 7 * a - 12;
+    std::cout <<"12 * a * a + 7 * a - 12="<< x << endl;
+    y = 3 * x * x * x + 4 * x * x - 11 * x + 1;
+    cout << "3 * x * x * x + 4 * x * x - 11 * x + 1 =";
+    std::cout << y << endl;
+    std::cout << "massa:" << endl;
+    cin >> m;
+    std::cout << "oblyom:" << endl;
+    cin >> v;
+    p = m / v;
+    std::cout << "plotnostb =" << p << endl;
+    std::cout << "ax+b=0" << endl;
+    cout << "vvedite b zatem a:";
+    cin >> b;
+    cin >> g;
+    if (g == 0) {
+        std::cout << "a = 0 owibka" << endl;
+    }
+    else {
+        n = -b / g;
+        std::cout<<"x=" << n << endl;
+    }
+    std::cout << "3adanie 3"  << endl;
+    cout << "vvedite koordinati:" << p << endl;
+    cout << "pervaya tochka";
+    cin >> q;
+    cin >> w;
+    cout << "vtoraya tochka";
+    cin >> e;
+    cin >> r;
+    a = sqrt((e - q) * (e - q) * (r - w) * (r - w));
+    cout << "passtoyanie=" << a << endl;
+    cout << "3adanie 4" << endl;
+    cout << "bolshee osnovanie trapecii=";
+    cin >> x;
+    cout << "menbshee osnovanie trapecii=";
+    cin >> a;
+    cout << "visota trapecii=";
+    cin >> y;
+    z = x + a + 2 * (sqrt(((x - a) / 2) * ((x - a) / 2) + y * y));
+    cout << "perimetr trapecii="<<z<<endl;
+    cout << "3adanie 5" << endl;
+    cout << "bolshii radius kolcha =";
+    cin >> x;
+    cout << "menbshii radius kolcha =";
+    cin >> a;
+    z = 3,14*(x*x-a*a);
+    cout << "plowadb kolca ="<<z<<endl;
+    cout << "3adanie 6" << endl;
+    cout << "rebro kuba=";
+    cin >> x;
+    cout << "V kuba=" << x * x * x <<endl;
+    cout << "S kuba=" << 6* x * x << endl;
+
+    cout << "3adanie 7" << endl;
+    cout << "storona kvadrata=";
+    cin >> x;
+    cout << "S kvadrata=" << x * x << endl;
+
+    cout << "3adanie 8" << endl;
+    cout << "radius okrujnosti =";
+    cin >> x;
+    cout << "diametr=" << 2* x << endl;
+
+    cout << "3adanie 9" << endl;
+    cout << "vvedite imya";
+    cin >> s;
+    cout << "Hello," << s <<"!My name is C++" <<endl;
+
+    cout << "3adanie 10" << endl;
+    cout << "vvedite slovo:";
+    cin >> s;
+    q = 0;
+    int len = s.length();
+    for (int i = 0; i < len / 2; ++i) {
+        if (s[i] != s[len - i - 1]) {
+            cout << "ento ne polidrom";
+            q = 1;
+            break;
+        }
+        
+    }
+    if (q == 0) { cout << "ento polidrom"; }
+    system("pause");
+    return 0;
+}
